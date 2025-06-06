@@ -5,7 +5,7 @@
   "scripts": {
     "build": "rimraf npx tsc",
     "start": "node dist/index.js",
-    "dev": "concurrently \"npx tsc -w\" \"nodemon dist/index.js\""
+    "dev": "concurrently \"npx tsc -w\" \"wait-on dist/index.js && nodemon dist/index.js\""
   },
   "type": "module",
   "keywords": [],
@@ -31,6 +31,7 @@
     "mongoose": "^8.15.1",
     "nodemon": "^3.1.10",
     "rimraf": "^5.0.10",
-    "ts-node": "^10.9.2"
+    "ts-node": "^10.9.2",
+    "wait-on": "^8.0.3"
   }
 }
