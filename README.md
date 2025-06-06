@@ -5,6 +5,7 @@
 
 ```
 cd server
+npm install
 npm run dev
 ```
 
@@ -12,8 +13,10 @@ npm run dev
 
 ```
 cd client
+npm install
 npm run dev
 ```
+
 
 ## Environment Variables
 
